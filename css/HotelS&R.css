@@ -3522,14 +3522,14 @@
       overflow: hidden;
   }
     .hotel-search-menue {
-      width: 90vw;
+      width: 97vw;
       height: 240px;
       position: absolute;
       left: 5px;
       top: 0px;
     }
     .hotel-search-header-withe-search-bar-with-effect {
-      width: 90vw;
+      width: 97vw;
       height: 236px;
       /* position: absolute; */
       left: 0px;
@@ -3537,7 +3537,7 @@
     }
     .header-after-sign-in {
       background: var(--neutral-100, #f9f9f9);
-      width: 90vw;
+      width: 97vw;
       height: 275px;
       /* position: absolute; */
       left: 0px;
@@ -3549,7 +3549,7 @@
       gap: 12px;
       align-items: flex-start;
       justify-content: flex-start;
-      width: 90vw;
+      width: 97vw;
       position: absolute;
       left: -4px;
       top: 0px;
@@ -3566,7 +3566,7 @@
       flex-shrink: 0;
       position: relative;
       flex-wrap: wrap;
-      width: 90vw;
+      width: 97vw;
       align-content: flex-start;
     }
     .logo {
@@ -3593,7 +3593,7 @@
       align-items: center;
       justify-content: flex-end;
       flex-shrink: 0;
-      width: 80vw;
+      width: 90vw;
       height: 30px;
       position: relative;
       overflow: hidden;
@@ -3617,11 +3617,11 @@
     .chip-menu {
       display: flex;
       flex-direction: row;
-      gap: 10px;
+      gap: 5px;
       align-items: flex-start;
       justify-content: center;
       flex-shrink: 0;
-      width: 80vw;
+      width: 97vw;
       position: relative;
       flex-wrap: wrap;
     } 
