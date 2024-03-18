@@ -862,3 +862,51 @@
   position: relative;
   overflow: visible;
 }
+
+
+@media only screen and (max-width: 768px) {
+.register{
+  height: 1310px;
+}
+.register2 {
+  background: var(--neutral-200, #efefef);
+  border-radius: 16px;
+  border-style: solid;
+  border-color: var(--neutral-400, #a6a6a6);
+  border-width: 1px;
+  width: 95vw;
+  height: 1127px;
+  position: absolute;
+  left: 2px;
+  top: 84px;
+  overflow: hidden;
+}
+.travel-photo {
+  border-radius: 8px;
+  width: 416px;
+  height: 412px;
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  object-fit: fill;
+}
+.input-register {
+  width: 393px;
+  height: 615px;
+  position: absolute;
+  left: 84px;
+  top: 437px;
+}
+.login-header-final {
+  background: var(--neutral-100, #f9f9f9);
+  border-style: solid;
+  border-color: var(--neutral-400, #a6a6a6);
+  border-width: 0px 0px 1px 0px;
+  width: 98vw;
+  height: 80px;
+  position: absolute;
+  left: -2px;
+  top: 0px;
+  overflow: hidden;
+}
+}
