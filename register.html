@@ -76,12 +76,10 @@
                     </div>
                   </div>
                   <div class="auto-layout">
-                    {% comment %} <input type="submit" class="text6 button rbutton" value="Register now"> {% endcomment %}
                     <button type="submit" id="submit" class="text6 button" >Register now</button>
 
                       
-                    </input>
-                    <a class="already-have-an-account-login" href="/login">
+                    <a class="already-have-an-account-login" href="login.html">
                       Already have an account? Login
                     </a>
                     <div class="or">
@@ -202,7 +200,6 @@
               </div>
             </div>
           </form>
-          <!-- ... (your existing HTML code) -->
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -215,7 +212,7 @@
       var confirmPassword = document.getElementById('pass2').value;
   
       if (!(firstName.value === '' || lastName.value === '' || email.value === '' || password.value === '' || confirmPassword.value === '')) {
-        window.location.href = '{% url "customerAbout" %}';
+        window.location.href = 'customerAbout.html';
      }
       else {alert('Please fill in all fields.'); }
       
@@ -224,7 +221,7 @@
   });
   
   document.getElementById("submit").onclick = function () {
-    window.location.href = '{% url "customerAbout" %}';
+    window.location.href = 'customerAbout.html';
 
   }
 
