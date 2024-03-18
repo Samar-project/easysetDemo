@@ -3097,7 +3097,7 @@ left: 5px;
     font-weight: var(--typographydesktop-button-m-font-weight, 500);
     position: relative;
   }
-  @media (min-width: 680px) and (max-width: 900px)
+  @media only screen and (max-width: 753px)
   /* @media only screen and (max-width: 900px)  */
   {
 
