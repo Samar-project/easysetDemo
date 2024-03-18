@@ -762,3 +762,52 @@ a{
   position: relative;
   overflow: visible;
 }
+@media only screen and (max-width: 768px) {
+  .login {
+    background: var(--neutral-100, #f9f9f9);
+    height: 1150px;
+    position: relative;
+    overflow: hidden;
+}
+  .login-header-final {
+    background: var(--neutral-100, #f9f9f9);
+    border-style: solid;
+    border-color: var(--neutral-400, #a6a6a6);
+    border-width: 0px 0px 1px 0px;
+    width: 99vw;
+    height: 68px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+.login2 {
+  background: var(--neutral-200, #efefef);
+  border-radius: 16px;
+  border-style: solid;
+  border-color: var(--neutral-400, #a6a6a6);
+  border-width: 1px;
+  width: 96vw;
+  height: 1024px;
+  position: absolute;
+  left: 0px;
+  top: 75px;
+  overflow: hidden;
+}
+.input-box-login {
+  width: 393px;
+  height: 483px;
+  position: absolute;
+  left: 68px;
+  top: 440px;
+}
+.travel-photo {
+  border-radius: 8px;
+  width: 476px;
+  height: 412px;
+  position: absolute;
+  left: 54px;
+  top: 13px;
+  object-fit: fill;
+}
+}
