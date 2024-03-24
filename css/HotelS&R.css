@@ -241,7 +241,7 @@
     justify-content: center;
     flex-shrink: 0;
     width: 90px;
-    left: 30vw;
+/*     left: 30vw; */
     position: relative;
   }
   .vector {
