@@ -760,8 +760,9 @@
     align-items: flex-end;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 1224px;
+    width: 90vw;
     position: relative;
+    flex-wrap: wrap;
   }
   .input {
     display: flex;
@@ -1630,13 +1631,14 @@
     position: relative;
   }
   .up {
-    display: flex;
-    flex-direction: row;
+   display: flex;
     gap: 16px;
     align-items: flex-start;
     justify-content: center;
     flex-shrink: 0;
-    width: 1224px;
+    width: 97vw;
+    flex-wrap: wrap;
+    flex-direction: row;
     position: relative;
   }
   .photo-1 {
@@ -1795,12 +1797,13 @@
   .down {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 6px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 1224px;
+    width: 97vw;
     position: relative;
+    flex-wrap: wrap;
   }
   .photo-4 {
     border-radius: 0px 0px 0px 8px;
@@ -1900,10 +1903,12 @@
     gap: 0px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 1295px;
+    width: 95%;
     position: absolute;
     left: calc(50% - 720px);
     top: 4227px;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
   .easy-set-24-app-footer {
     background: var(--neutral-100, #f9f9f9);
@@ -1913,12 +1918,14 @@
     padding: 24px 0px 24px 0px;
     display: flex;
     flex-direction: row;
-    gap: 335px;
+    gap: 35px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-shrink: 0;
-    width: 1195px;
+    width: 98%;
     position: relative;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
   .auto-layout {
     display: flex;
@@ -2054,7 +2061,7 @@
     border-radius: 8px 8px 0px 0px;
     flex-shrink: 0;
     width: 95vw;
-    height: 715px;
+/*     height: 715px; */
     position: relative;
     top: 9px;
   }
@@ -2229,10 +2236,10 @@
   .footer2 {
     background: #f8f8f8;
     width: 1295px;
-    height: 388px;
+/*     height: 388px; */
     position: absolute;
     left: 0px;
-    top: 6px;
+/*     top: 6px; */
     overflow: hidden;
   }
   .base {
@@ -2251,7 +2258,7 @@
     align-items: flex-end;
     justify-content: flex-start;
     position: absolute;
-    left: 927px;
+    left: 880px;
     top: 263px;
   }
   .input8 {
@@ -2383,8 +2390,8 @@
     justify-content: flex-start;
     width: 405px;
     position: relative;
-    left: 175px;
-    top: calc(50% - -98px);
+    left: 100px;
+    top: 276px;
   }
   .visa-card {
     border-radius: 4px;
@@ -2457,12 +2464,13 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
-    width: 1195px;
+    justify-content: flex-start;
+    width: 94%;
     position: relative;
     gap: 33px;
-    left: 100px;
-    top: 48px;
+     left: 30px;
+  /*  top: 48px; */
+      flex-warp:wrap;
   }
   .auto-layout-about-us {
     display: flex;
@@ -2913,15 +2921,16 @@
   }
   .cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 24px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 1224px;
+    width: 100%;
     height: 631px;
     position: absolute;
     left: 20px;
-    top: 3536px;
+    top: 3335px;
+    flex-wrap: wrap;
   }
   .banner-1 {
     display: flex;
@@ -2930,8 +2939,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 1224px;
+    width: 98%;
     position: relative;
+    flex-wrap: wrap;
   }
   .banner-12 {
     background: linear-gradient(
@@ -2950,6 +2960,7 @@
     height: 346px;
     position: relative;
     overflow: hidden;
+    width:47%;
   }
   .reserve-your-hotel-pursue-your-team {
     color: var(--neutral-white, #ffffff);
@@ -3006,6 +3017,7 @@
     justify-content: flex-start;
     flex: 1;
     height: 346px;
+    width:47%;
     position: relative;
     overflow: hidden;
   }
@@ -3027,14 +3039,15 @@
     justify-content: flex-start;
   }
   .banner-3 {
-    display: flex;
+       display: flex;
     flex-direction: row;
     gap: 24px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 1224px;
+    width: 98%;
     position: relative;
+    flex-wrap: wrap;
   }
   .banner-32 {
     background: linear-gradient(
@@ -3140,22 +3153,22 @@
   }
   .back-review-cards {
     background: linear-gradient(to left, #ffffff, #ffffff);
-    width: 1441px;
-    height: 609px;
+    width: 98%;
+    height: 8%;
     position: absolute;
-    left: calc(50% - 720px);
+    left: 4px;
     top: 2867px;
     overflow: hidden;
   }
   .review-cards {
-    display: flex;
+        display: flex;
     flex-direction: row;
-    gap: 100px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    width: 90%;
     position: absolute;
     left: calc(50% - 477.5px);
     top: 60px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .component-1 {
     flex-shrink: 0;
@@ -3268,9 +3281,9 @@
     border-radius: 300px;
     width: 60px;
     height: 60px;
-    position: absolute;
-    left: 51px;
-    top: 0px;
+    position: relative;
+    left: 84px;
+    top: 52px;
     overflow: hidden;
     object-fit: cover;
   }
@@ -3442,9 +3455,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     flex-shrink: 0;
-    width: 1224px;
+    width: 95vw;
     position: relative;
   }
   .photo-left {
@@ -3461,7 +3474,7 @@
     align-items: flex-end;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 573px;
+    width: 47%;
     height: 400px;
     position: relative;
     overflow: hidden;
@@ -3501,7 +3514,7 @@
     align-items: flex-end;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 631px;
+    width: 47%;
     height: 400px;
     position: relative;
     overflow: hidden;
@@ -4154,6 +4167,7 @@
       justify-content: flex-start;
       /* flex: 1; */
       height: 280px;
+      width:47%;
       position: relative;
       overflow: hidden;
       width: 94vw;
@@ -4220,7 +4234,7 @@
   height: 674px;
   position: relative;
   width: 98vw;
-  top:603vh;
+  top:1030vh;
   left: -3px;
 }
 .easy-set-24-app-footer {
