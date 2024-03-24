@@ -200,10 +200,11 @@
           </form>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("submit").onclick = function (event) {
-      event.preventDefault(); // Prevent form submission before validation
-      
+    document.addEventListener("DOMContentLoaded", function() {
+
+
+    function isvalid()
+    {
       var firstName = document.getElementById('first').value;
       var lastName = document.getElementById('last').value;
       var email = document.getElementById('email1').value;
@@ -241,14 +242,20 @@
         return;
       }
       
-      // If all validations pass, redirect to registration page
-          else{
+      return true;
+
+    }
+
+      document.getElementById("submit").onclick = function (event) {      
+          if(isvalid()){
       window.location.href = '/customerAbout.html';
+          }
+          else {
+            event.preventDefault();
           }
     };
     
-  }
-
+  });
 </script>
 
 <!-- ... (rest of your HTML code) -->
