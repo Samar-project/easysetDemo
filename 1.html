@@ -3,7 +3,7 @@
     <head><title>
         Welcome Anna
     </title>
-    <link rel="stylesheet" href="css/HotelS&R.css">
+    <link rel="stylesheet" href="HotelS&R.css">
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -34,7 +34,7 @@
                         </svg>
                         <div class="easy-set-24">EasySet 24</div>
                       </a>
-                      <input type="text" class="search-input-in-footer">
+                      <div class="search-input-in-footer">
                         <svg
                           class="icons-base-search"
                           width="25"
@@ -64,7 +64,7 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-<!--                       </div> -->
+                      </div>
                       <div class="icons">
                         <div class="icons2">
                           <div class="england">
@@ -222,27 +222,18 @@
                     <div class="text4">
                       <div class="vip">VIP</div>
                     </div>
-                    <div class="input4">
-                      <div class="text6">
-                        <div class="long-lasting">Long Lasting</div>
-                      </div>
-                      <svg
-                        class="icons-edit-drop-down-list"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M20 14L12 20L4 14"
-                          stroke="#043E5F"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path d="M4 5H20" stroke="#043E5F" stroke-linecap="round" />
-                        <path d="M4 9H20" stroke="#043E5F" stroke-linecap="round" />
-                      </svg>
+                    <div >
+                      <select class="input4"
+                      name="vip_options"
+                      id="vip_options"
+                      class="dropdown-content"
+                    >
+                      <option value="opt_1" selected>Long Lasting</option>
+                      <option value="opt_2">Exclusive</option>
+                      <option value="opt_3">Luxury</option>
+                      <option value="opt_4">First-Class</option>
+                      </select>
+                      
                     </div>
                   </div>
                   <div class="input5">
@@ -274,27 +265,38 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <div class="_2-adults-3-children">2 Adults - 3 Children</div>
+                        <div class="_2-adults-3-children">
+                          <select
+                      name="adults"
+                      id="adults_options"
+                      class="dropdown-content2"
+                    >
+                      <option value="opt_1" selected>1</option>
+                      <option value="opt_2">2</option>
+                      <option value="opt_3">3</option>
+                      <option value="opt_4">4</option></select>
+                      Adults - 
+                      <select
+                      name="childern"
+                      id="Children_options"
+                      class="dropdown-content3"
+                    >
+                      <option value="opt_1" selected>1</option>
+                      <option value="opt_2">2</option>
+                      <option value="opt_3">3</option>
+                      <option value="opt_4">4</option></select> Children</div>
                       </div>
                       <div class="text9">
-                        <div class="two-rooms">Two Rooms</div>
-                        <svg
-                          class="icons-edit-drop-down-list2"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div class="two-rooms"><select
+                          name="roomss"
+                          id="room_options"
+                          class="dropdown-content3"
                         >
-                          <path
-                            d="M20 14L12 20L4 14"
-                            stroke="#043E5F"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path d="M4 5H20" stroke="#043E5F" stroke-linecap="round" />
-                          <path d="M4 9H20" stroke="#043E5F" stroke-linecap="round" />
-                        </svg>
+                        <option value="opt_1" selected>Two Rooms</option>
+                        <option value="opt_2">Three Rooms</option>
+                        <option value="opt_3">Four Rooms</option>
+                        <option value="opt_4">One Room</option></select></div>
+                        
                       </div>
                     </div>
                   </div>
@@ -302,69 +304,14 @@
                     <div class="text4">
                       <div class="check-in-check-out">Check In -Check Out</div>
                     </div>
-                    <div class="input7">
-                      <div class="text8">
-                        <svg
-                          class="icons-edit-calendar"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2.5 9.5H21.5V20C21.5 20.5523 21.0523 21 20.5 21H3.5C2.94771 21 2.5 20.5523 2.5 20V9.5Z"
-                            stroke="#043E5F"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2.5 4.5C2.5 3.94771 2.94771 3.5 3.5 3.5H20.5C21.0523 3.5 21.5 3.94771 21.5 4.5V9.5H2.5V4.5Z"
-                            stroke="#043E5F"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8 2V6"
-                            stroke="#043E5F"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16 2V6"
-                            stroke="#043E5F"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M14 17H17"
-                            stroke="#043E5F"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M7 17H10"
-                            stroke="#043E5F"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M14 13H17"
-                            stroke="#043E5F"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M7 13H10"
-                            stroke="#043E5F"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <div class="_18-dec-2023-23-dec-2023">
-                          18 Dec 2023 - 23 Dec 2023
-                        </div>
+                    <div  class="input7">
+                      📅<input type="date" class="text8">
+                      -
+                      📅<input type="date" class="text8">  
+                        
                       </div>
+                    
                     </div>
-                  </div>
                   <div class="search3">
                     <div class="search4">Search</div>
                   </div>
@@ -395,9 +342,9 @@
                 <div class="tab-review2">
                   <div class="highest-reviewed">Highest Reviewed</div>
                 </div>
-                <div class="tab-review2">
+                <!-- <div class="tab-review2">
                   <div class="highest-reviewed">Highest Reviewed</div>
-                </div>
+                </div> -->
               </div>
               <div class="why-choose-us">
                 <div class="why-choose-us2">Why Choose Us?</div>
@@ -1410,7 +1357,7 @@
                     </div>
                     <div class="auto-layout-headquarters">
                       <div class="headquarters">Headquarters</div>
-                      <div class="england">England</div>
+                      <div class="england2">England</div>
                       <div class="france">France</div>
                       <div class="canada">Canada</div>
                       <div class="iceland">Iceland</div>
