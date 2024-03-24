@@ -68,7 +68,7 @@
                     </div>
                   </div>
                   <div class="text4">
-                    <input type="checkbox" class="chech-mark-final"></input>
+                    <input type="checkbox" id="terms-checkbox" class="chech-mark-final"></input>
                     <div class="i-agree-to-all-the-terms-and-privacy-policies">
                       I agree to all the Terms and Privacy Policies
                     </div>
@@ -201,26 +201,52 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    
-    document.getElementById("submit").onclick = function () {
+      document.getElementById("submit").onclick = function (event) {
+      event.preventDefault(); // Prevent form submission before validation
+      
       var firstName = document.getElementById('first').value;
       var lastName = document.getElementById('last').value;
       var email = document.getElementById('email1').value;
       var password = document.getElementById('pass1').value;
       var confirmPassword = document.getElementById('pass2').value;
-  
-      if (!(firstName.value === '' || lastName.value === '' || email.value === '' || password.value === '' || confirmPassword.value === '')) {
-        window.location.href = 'customerAbout.html';
-     }
-      else {alert('Please fill in all fields.'); }
+      var checkbox = document.getElementById('terms-checkbox').checked;
       
+      if (firstName.trim() === '' || !/^[a-zA-Z]+$/.test(firstName)) {
+        alert('Please enter a valid first name.');
+        return;
+      }
+      
+      else if (lastName.trim() === '' || !/^[a-zA-Z]+$/.test(lastName)) {
+        alert('Please enter a valid last name.');
+        return;
+      }
+      
+      else if (email.trim() === '' || !/^\S+@\S+\.\S+$/.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      
+      else if (password.trim() === '') {
+        alert('Please enter a password.');
+        return;
+      }
+      
+     else if (password !== confirmPassword) {
+        alert('Passwords do not match.');
+        return;
+      }
+      
+     else if (!checkbox) {
+        alert('Please agree to the Terms and Privacy Policies.');
+        return;
+      }
+      
+      // If all validations pass, redirect to registration page
+          else{
+      window.location.href = '/customerAbout.html';
+          }
     };
-
-  });
-  
-  document.getElementById("submit").onclick = function () {
-    window.location.href = 'customerAbout.html';
-
+    
   }
 
 </script>
