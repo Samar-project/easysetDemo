@@ -5,7 +5,7 @@
   <title>Second Page</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/sec2.css">
+  <link rel="stylesheet" href="sec2.css">
 </head>
 
 <body>
@@ -855,15 +855,11 @@
                     </svg>
                   </div>
                 </div>
-              </div><!-- <div class="radio-button-1-autolayout">
-                    <div class="radio-button2">
-                      <div class="radio-button-hover"></div>
-                      <div class="radio-button-hover2"></div>
-                    </div>
-                    <div class="i-am-the-main-guest">I am the main guest</div>
-                  </div> -->
+              </div>
               <div class="autolayout-frame-users">
-                <div class="who-are-you-booking-for">Who are you booking for?</div>
+                <div class="who-are-you-booking-for">Who are you booking for?<span style="position: relative; left:5px;color:red;" class="span1" >
+                  *
+                </span></div>
                 <div class="radio-button-1-autolayout">
                   <div class="radio-button">
                     <input type="radio" class="radio-button-hover" name="bookbutton" value="1">
@@ -918,14 +914,14 @@
                 <div class="input-up">
                   <div class="input-up">
                     <div class="input3">
-                      <div class="full-name">Full Name</div>
+                      <div class="full-name">Full Name<span style="position: relative; left:5px;color:red;" class="span1" >
+                        *
+                      </span></div>
                       <div class="input4">
-                        <input class="input-12 " placeholder="First name">
+                        <input class="input-12" id="first" placeholder="First name" required>
                         <div >
                           <div class="enter-your-email-gmail-com">
-                            <span style="position: relative;top:-34px; left:169px;color:red;" class="span1" hidden>
-                              *
-                            </span>
+                            
                           </div>
                         </div>
 
@@ -937,27 +933,17 @@
                   </div>
 
 
-                  <input class="input-14 " placeholder="Last name">
-
-                  <span class="span2"     position: relative;
-                  top: -32px;
-                  right: 15px;
-                  color: red;
-                  font-size: 11px;
-               hidden>
-                    *
-                  </span>
-
-
-
+                  <input class="input-14 " id="last" placeholder="Last name" required>
                 </div>
               </div>
               <div class="input-center">
                 <div class="input6">
                   <div class="input-15">
-                    <div class="title">Email Address</div>
+                    <div class="title">Email Address<span style="position: relative; left:5px;color:red;" class="span1" >
+                      *
+                    </span></div>
                   </div>
-                  <input type="email" placeholder="*********************" class="input-1 emailinput">
+                  <input type="email" id="email1" placeholder="*********************" class="input-1 emailinput">
 
                   <svg class="icons-office-mail" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -970,9 +956,11 @@
                 </div>
                 <div class="input7">
                   <div class="input-15">
-                    <div class="title">Phone Number</div>
+                    <div class="title">Phone Number<span style="position: relative; left:5px;color:red;" class="span1" >
+                      *
+                    </span></div>
                   </div>
-                  <input type="number" class="input-1" style="padding-left: 24px;" placeholder="764378888888">
+                  <input type="number" id="phonen" class="input-1" style="padding-left: 24px;" placeholder="764378888888">
 
                   <svg class="flags-se" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -1003,32 +991,35 @@
                   <div class="input-15">
                     <div class="title">Chose An Option</div>
                   </div>
-                  <div class="input-1">
+                  <div >
                     <div class="text22">
-                      <div class="text19">
-                        <div class="enter-your-email-gmail-com2">
-                          Not Provided
-                        </div>
-                      </div>
-                      <svg class="icons-arrows-down-small2" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 8L8 12L4 8" stroke="#565656" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
+                      
+                          <select 
+                      name="vip_options"
+                      id="vip_options"
+                      class="dropdown-content input-1"
+                    >
+                      <option value="opt_1" selected>Not provided</option>
+                      <option value="opt_2">Opt 1</option>
+                      <option value="opt_3">Opt 2</option>
+                      <option value="opt_4">Opt 3</option>
+                      </select>
+                        
+                      
+                      
                     </div>
                   </div>
                 </div>
               </div>
               <div class="input8">
                 <div class="input-15">
-                  <div class="title">Region /Country</div>
+                  <div class="title">Region /Country<span style="position: relative; left:5px;color:red;" class="span1" >
+                    *
+                  </span></div>
                 </div>
-                <input class="input-1" style="padding-left: 5px;" placeholder="Country">
-                  
-                <span class="span3" hidden>*</span>
-                       
-              </div>
-  
+                <input class="input-1" id="country" style="padding-left: 5px;" placeholder="Country" required>
 
+              </div>
             </div>
           </div>
         </div>
@@ -1136,7 +1127,7 @@
                   <div class="big-input">
                     <div class="title2">(optional)</div>
                   </div>
-                  <input class="empty-input">
+                  <input class="empty-input" style="padding-left: 25px;">
                    
                           <svg class="clip-path-group2" width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -1221,19 +1212,19 @@
               </div>
               <div class="input9">
                 <div class="input-32">
-                  <div class="input-16">
-                    <div class="input-17">
-                      <div class="text-icon3">
-                        <div class="enter-your-email-gmail-com2">
-                          Please Select
-                        </div>
-                      </div>
-                      <svg class="icons-arrows-sort" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 14.0003L5 9.66699H11L8 14.0003Z" stroke="#565656" stroke-linejoin="round" />
-                        <path d="M8 2L5 6.33333H11L8 2Z" stroke="#565656" stroke-linejoin="round" />
-                      </svg>
-                    </div>
+                  <div >
+                    
+                      
+                          <select class="input-16">
+                            <option >Please Select</option>
+                            <option value="op1">UTC+10:30</option>
+                            <option value="op2">UTC+9:30</option>
+                            <option value="op3">UTC-5</option>
+                            <option value="op4">UTC+5:30</option>
+                            <option value="op5">UTC+8:45</option>
+                            <option value="op6">UTC+3:30</option>
+                          </select>
+                        
                   </div>
                   <div class="text34">
                     <div class="information">
@@ -1264,9 +1255,11 @@
                         <div class="input10">
                           <div class="input11">
                             <div class="input-15">
-                              <div class="title">Full Name On The Card</div>
+                              <div class="title">Full Name On The Card<span style="position: relative; color:red;" class="span1" >
+                                *
+                              </span></div>
                             </div>
-                            <input class="input-1" placeholder="Anna Carina">
+                            <input class="input-1" id="fullname" placeholder="Anna Carina">
                               <div class="text17">
                                 
                                 
@@ -1279,9 +1272,11 @@
                       <div class="input-2">
                         <div class="input12">
                           <div class="input-15">
-                            <div class="title3">Card Number</div>
+                            <div class="title3">Card Number<span style="position: relative;color:red;" class="span1" >
+                              *
+                            </span></div>
                           </div>
-                          <input class="input-1" style="padding-left: 24px;" placeholder="**********************">
+                          <input class="input-1" id="card" style="padding-left: 24px;" placeholder="**********************">
                             
                                 <svg class="icons-money-bank-card" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
@@ -1299,18 +1294,23 @@
                       </div>
                       <div class="input-3">
                         <div class="input-19">
-                          <div class="title">EXP Date</div>
+                          <div class="title">EXP Date<span style="position: relative;color:red;" class="span1" >
+                            *
+                          </span></div>
                         </div>
-                        <input class="input-110" style="padding-left: 5px;" placeholder="**/**">
-                          
+                        <!-- <input class="input-110" id="expdate" type="month" style="padding-left: 5px;" placeholder="**/**"> -->
+                        <input class="input-110" type="text" id="dateInput" placeholder="--/----">  
                         
                       </div>
                       <div class="input-4">
                         <div class="input13">
                           <div class="input-15">
-                            <div class="title">CVC</div>
+                            <div class="title">CVC<span style="position: relative; color:red;" class="span1" >
+                              *
+                            </span>
+                            <span id="spancvc" style="position: relative; color:red;" class="span1" hidden>only 3 digit accepted</span></div>
                           </div>
-                          <input class="input-111" style="padding-left: 5px;" placeholder="***">
+                          <input class="input-111" id="cvc" type="number" style="padding-left: 5px;" placeholder="***">
                             
                            
                         </div>
@@ -1337,13 +1337,14 @@
                 </div>
                 <div class="right-button">
                   <div class="button2">
-                    <div class="button3">
+                    <button type="submit" id="purchase"  class="button3">
                       <div class="text36">
                         <div class="text37">Payment</div>
                       </div>
+                    </button>
                     </div>
                   </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -1459,7 +1460,7 @@
               <div class="title">Email</div>
             </div>
             <div>
-              <input type="email" class="auto-layout-input" placeholder="enter your email">
+              <input type="email" class="auto-layout-input" placeholder="enter your email" >
               <div class="text301">
                 <svg class="icons-office-mail2" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -1585,6 +1586,98 @@
       </div>
     </div>
   </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+      document.getElementById("purchase").onclick = function (event) {      
+
+        var firstName = document.getElementById('first').value;
+        var lastName = document.getElementById('last').value;
+        var email = document.getElementById('email1').value;
+        var phone = document.getElementById('phonen').value;
+        var country = document.getElementById('country').value;
+        var fullname = document.getElementById('fullname').value;
+        var card = document.getElementById('card').value;
+        var expdate = document.getElementById('dateInput').value;
+        var cvc = document.getElementById('cvc').value;
+        
+        if (firstName.trim()==='')
+        {
+          document.getElementById('first').focus();
+          event.preventDefault();
+          return;
+        }
+        else if(lastName.trim()==='')
+        {
+          document.getElementById('last').focus();
+          return;
+        }
+        else if ( email.trim()==='')
+        {
+          document.getElementById('email1').focus();
+          return;
+        }
+        else if (phone.trim()==='')
+        {
+          document.getElementById('phonen').focus();
+          return;
+        }
+      else if (country.trim()==='')
+      {
+        document.getElementById('country').focus();
+        return;
+      }
+      else if (fullname.trim()==='')
+      {
+        document.getElementById('fullname').focus();
+        return;
+      }
+      else if (card.trim()==='')
+      {
+        document.getElementById('card').focus();
+        return;
+      }
+      else if (expdate.trim()==='')
+      {
+        document.getElementById('dateInput').focus();
+        return;
+      }
+      else if( cvc.trim()==='')
+      {
+        document.getElementById('cvc').focus();
+        return; 
+      }
+      else if( cvc.length!==3)
+      {
+        document.getElementById('cvc').focus();
+        let element = document.getElementById("spancvc");
+            let hidden = element.getAttribute("hidden");
+            element.removeAttribute("hidden");
+            setTimeout(() => {  element.setAttribute("hidden", "hidden"); }, 4000);
+        return; 
+      }
+      else
+        alert('payment is processing.');
+    }
+
+     
+    function formatDateInput(input) {
+  const cleaned = input.replace(/\D/g, '');
+  const parts = [cleaned.slice(0, 2), cleaned.slice(2, 6)];
+  return parts.join('/').replace(/^(\d{2})\/(\d{4})/, "$1/$2");
+}
+
+const dateInput = document.getElementById('dateInput');
+
+// Listen for input events
+dateInput.addEventListener('input', function(event) {
+  let value = event.target.value;
+  value = formatDateInput(value);
+  event.target.value = value;
+});
+    });
+    </script>
 
 </body>
 
