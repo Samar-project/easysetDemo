@@ -1602,18 +1602,18 @@
         var expdate = document.getElementById('dateInput').value;
         var cvc = document.getElementById('cvc').value;
         
-        if (firstName.trim()==='')
+        if (firstName.trim()===''|| !/^[a-zA-Z]+$/.test(firstName))
         {
           document.getElementById('first').focus();
           event.preventDefault();
           return;
         }
-        else if(lastName.trim()==='')
+        else if(lastName.trim()===''|| !/^[a-zA-Z]+$/.test(lastName))
         {
           document.getElementById('last').focus();
           return;
         }
-        else if ( email.trim()==='')
+        else if ( email.trim()===''|| !/^\S+@\S+\.\S+$/.test(email))
         {
           document.getElementById('email1').focus();
           return;
@@ -1623,12 +1623,18 @@
           document.getElementById('phonen').focus();
           return;
         }
-      else if (country.trim()==='')
+        else if( phone.length!==10 )
+    {
+      document.getElementById('phonen').focus();
+      alert('Number Shuold Only 10 digit.');
+      return; 
+    }
+      else if (country.trim()===''|| !/^[a-zA-Z]+$/.test(country))
       {
         document.getElementById('country').focus();
         return;
       }
-      else if (fullname.trim()==='')
+      else if (fullname.trim()===''|| !/^[a-zA-Z]+$/.test(fullName))
       {
         document.getElementById('fullname').focus();
         return;
