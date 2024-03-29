@@ -1099,13 +1099,13 @@ document.addEventListener("DOMContentLoaded", function() {
       var expdate = document.getElementById('dateInput').value;
       var cvc = document.getElementById('cvc').value;
       
-      if (firstName.trim()==='')
+      if (firstName.trim()===''|| !/^[a-zA-Z]+$/.test(firstName))
       {
         document.getElementById('first').focus();
         event.preventDefault();
         return;
       }
-      else if(lastName.trim()==='')
+      else if(lastName.trim()===''|| !/^[a-zA-Z]+$/.test(lastName))
       {
         document.getElementById('last').focus();
         event.preventDefault();
